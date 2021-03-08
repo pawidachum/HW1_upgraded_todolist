@@ -1,0 +1,19 @@
+<div class="todolist">
+<p>My Task today</p> 
+<div >
+    <app-list-tasks *ngFor="let task of tasks; index as i" [taskObj] ="task" (OnDeleted)="deleteTask($event)"></app-list-tasks>
+</div>
+
+<div class="add-tk">
+<b>Add task</b> 
+<p class="name">Name: <input type="text" [(ngModel)]="taskName"></p>
+<p class="desc">Description: <input type="text" [(ngModel)]="taskDescription"></p>
+<button (click)="addTask()">Add</button>
+
+</div>
+</div>
+
+
+
+
+

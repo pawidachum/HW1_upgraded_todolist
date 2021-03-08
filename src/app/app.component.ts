@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild} from '@angular/core';
+import { ListTasksComponent } from './list-tasks/list-tasks.component';
+import { Tasks } from './tasks';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'HW1-upgraded-todolist';
+  // @ViewChild ('list-tasks')
+  // ListTasks: ListTasksComponent;
+ 
 }
+

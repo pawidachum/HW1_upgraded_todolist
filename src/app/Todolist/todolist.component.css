@@ -1,0 +1,12 @@
+.todolist{
+    border-style: solid;
+    width: 30%;
+}
+.name, .desc{
+    text-align: right;
+    margin-right: 20px;
+}
+.add-tk{
+    border-style: solid;
+    margin: 10px;
+}

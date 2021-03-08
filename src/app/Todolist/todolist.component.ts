@@ -10,9 +10,6 @@ import { Tasks } from '../tasks';
       styleUrls: ['./todolist.component.css']
      })
      export class ToDoListComponent {
-        // @ViewChildren(ListTasksComponent)
-        // ToDoList: QueryList<ListTasksComponent>;
-
        @Input()
         taskName: string;
         taskDescription: string;
@@ -29,21 +26,18 @@ import { Tasks } from '../tasks';
 
      addTask(){
          let dd: Tasks = {
-             id: 1,
+             id: "1",
              name: this.taskName,
              description: this.taskDescription
          }
 
-         //console.log(dd);
+        
          this.tasks.push(dd);
          console.log(this.tasks);
      } 
      deleteTask(index: number, component:ListTasksComponent){
-        this.tasks.splice(index);
-        console.log('from deleteTask');
-        //   this.tasks = this.tasks.splice(index, 1);
-        // this.tasks = this.tasks.filter(item => item !== index );
-    //  }
+        this.tasks.splice(index, 1);
+        
 } 
-    
-}
+   
+}  
